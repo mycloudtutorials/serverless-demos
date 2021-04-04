@@ -1,0 +1,6 @@
+curl -k -H "Content-Type: text/html" -X PUT -T "sample1.html" "<Presigned Url>"
+
+
+curl -k -H "Content-Type: text/csv" -X PUT -T "sample2.csv" "<Presigned Url>"
+
+
