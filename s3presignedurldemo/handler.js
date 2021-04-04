@@ -11,7 +11,7 @@ module.exports.generatePresignedUrl = async event => {
     let objectKey = body.objectKey
     let s3Action = body.s3Action  //get/put etc
     let contentType = body.contentType
-    let expirationTime = 60 * 5  //1 min to test
+    let expirationTime = 60  //1 min to test
 
     console.log(`BucketName: ${BUCKET_NAME}, ObjectKey: ${objectKey}, S3Action: ${s3Action}, expirationTime: ${expirationTime}, contentType: ${contentType}`)
     
@@ -23,6 +23,10 @@ module.exports.generatePresignedUrl = async event => {
 
     if (s3Action === 'putObject') {
       params.ContentType = contentType
+
+      expiration = 60 * 5
+      params.Expires = expiration
+
     }
 
     const signedUrl = s3.getSignedUrl(s3Action, params);
