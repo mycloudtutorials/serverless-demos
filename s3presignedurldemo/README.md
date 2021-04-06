@@ -14,6 +14,11 @@ LinkedIn: https://www.linkedin.com/in/girishjaju/
 
 1. Make sure you have serverless, node and npm installed.
 2. Clone/download the repository
+
+    2a) I have added a plugin called serverless-plugin-log-retention (after the youtube video recording), to be able to specify CloudWatch log retention duration. By default, the logs are retained for unlimited time.
+    
+    2b) After downloading the source code, please run npm install, before running the sls deploy
+
 3. Open the serverless.yml file and replace the S3 bucket name in the resources section
 4. Run sls deploy
 5. Get the api end point
