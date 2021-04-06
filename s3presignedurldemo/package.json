@@ -4,15 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sls": "node_modules/.bin/sls"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Girish Jaju - mycloudtutorials.com",
   "license": "ISC",
   "devDependencies": {
-    "axios": "^0.21.1",
-    "serverless": "^2.33.0",
     "serverless-plugin-log-retention": "^2.0.0"
   }
 }
