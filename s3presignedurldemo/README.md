@@ -45,3 +45,8 @@ For example:
     curl -k -H "Content-Type: text/html" -X PUT -T "sample1.html" "PRESIGN URL"
 
 
+# The architecure / flow diagram:
+
+![plot](./GetPresignedUrl.jpeg)
+
+
