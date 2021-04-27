@@ -1,0 +1,23 @@
+service: multiregion-failover
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  endpointType: REGIONAL
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /hello
+          method: get
+  health:
+    handler: handler.health
+    events:
+      - http:
+          path: /health 
+          method: get     

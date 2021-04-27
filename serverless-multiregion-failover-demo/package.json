@@ -1,0 +1,13 @@
+{
+  "name": "multiregion-failover",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sample serverless application for multi region failover demo",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Girish Jaju - mycloudtutorials.com",
+  "license": "ISC"
+}
